@@ -14,14 +14,10 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ],
+    "*.{css,scss}": "stylelint --fix",
     "*.{js,jsx}": [
       "eslint --fix"
-    ],
-    "*.js": "eslint --cache --fix",
-    "*.scss": "stylelint --fix"
+    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
