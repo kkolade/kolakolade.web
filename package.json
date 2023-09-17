@@ -19,7 +19,9 @@
     ],
     "*.{js,jsx}": [
       "eslint --fix"
-    ]
+    ],
+    "*.js": "eslint --cache --fix",
+    "*.scss": "stylelint --fix"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -46,6 +48,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
     "sass": "^1.67.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
